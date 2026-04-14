@@ -1,0 +1,62 @@
+.subfooter {
+    background: #1f3d2b;
+    color: white;
+    padding: 60px 40px;
+}
+
+.subfooter-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+/* ABOUT SECTION */
+.subfooter-about {
+    flex: 1;
+    min-width: 250px;
+}
+
+.subfooter-about h2 {
+    margin-bottom: 10px;
+}
+
+.subfooter-about p {
+    color: #dcdcdc;
+    line-height: 1.6;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+    border-radius: 50%;
+}
+
+/* LINKS */
+.subfooter-links {
+    display: flex;
+    flex-direction: column;
+    min-width: 200px;
+}
+
+.subfooter-links h3 {
+    margin-bottom: 10px;
+}
+
+.subfooter-links a {
+    color: #dcdcdc;
+    text-decoration: none;
+    margin-bottom: 8px;
+    transition: 0.3s;
+}
+
+.subfooter-links a:hover {
+    color: white;
+}
