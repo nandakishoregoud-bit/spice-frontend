@@ -2,33 +2,71 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 30px;
+    padding: 15px 20px;
     background: #2d6a4f;
     color: white;
+    position: relative;
 }
 
-/* LOGO CONTAINER */
+/* LOGO */
 .logo {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 8px;
 }
 
 .logo img {
-    width: 50px;
-    height: 50px;
-    object-fit: contain;
+    width: 45px;
+    height: 45px;
     border-radius: 50%;
 }
 
-/* NAVIGATION */
-.header a {
+/* NAV DESKTOP */
+.nav {
+    display: flex;
+}
+
+.nav a {
     margin-left: 15px;
     color: white;
     text-decoration: none;
-    font-weight: 500;
 }
 
-.header a:hover {
-    text-decoration: underline;
+/* HAMBURGER (hidden on desktop) */
+.hamburger {
+    display: none;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+/* 📱 MOBILE VIEW */
+@media (max-width: 768px) {
+
+    /* Show hamburger */
+    .hamburger {
+        display: block;
+    }
+
+    /* Hide nav by default */
+    .nav {
+        position: absolute;
+        top: 70px;
+        right: 0;
+        background: #2d6a4f;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        display: none;
+        padding: 20px 0;
+    }
+
+    /* Show when active */
+    .nav.active {
+        display: flex;
+    }
+
+    .nav a {
+        margin: 10px 0;
+        font-size: 18px;
+    }
 }
